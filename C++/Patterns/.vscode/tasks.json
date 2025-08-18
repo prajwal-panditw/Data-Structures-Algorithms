@@ -1,0 +1,27 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run C++ with input/output",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "g++ \"${file}\" -o \"${fileDirname}\\a.exe\" && \"${fileDirname}\\a.exe\" < \"${fileDirname}\\input.txt\" > \"${fileDirname}\\output.txt\""
+      ],
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/c"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
