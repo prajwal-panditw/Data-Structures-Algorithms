@@ -138,7 +138,6 @@ int main() {
     cout << endl;
     return 0;
 }
-```cpp
 // File: 5-Find-Union-of-Arrays.cpp
 #include <iostream>
 #include <vector>
